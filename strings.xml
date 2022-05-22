@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">FYP_Prototype(Final)</string>
+    <string-array name="rooms_list">
+        <item>BedRoom 1</item>
+        <item>BedRoom 2</item>
+        <item>TV Lounch</item>
+        <item>Living Room</item>
+        <item>Guest Room 1</item>
+        <item>Bath Room 1</item>
+        <item>Bath Room 2</item>
+        <item>Kitchen</item>
+        <item>Guest Room 2</item>
+
+    </string-array>
+
+    <string-array name="languages">
+        <item>5 Volts</item>
+        <item>10 Volts</item>
+        <item>15 Volts</item>
+        <item>20 Volts</item>
+        <item>25 Volts</item>
+    </string-array>
+</resources>

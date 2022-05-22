@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="178dp"
+            android:layout_height="117dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="40dp"
+            android:transitionName="logo_image"
+            app:srcCompat="@drawable/bulb" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:text="CESHA"
+            android:fontFamily="@font/andika_new_basic"
+            android:textSize="40dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="20dp">
+
+
+        <ImageView
+            android:id="@+id/bluetoothIcon_id"
+            android:layout_width="58dp"
+            android:layout_height="55dp"
+            app:srcCompat="@drawable/ic_action_on"
+            tools:srcCompat="@drawable/ic_action_off" />
+    <Switch
+        android:id="@+id/switchBluetooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="Off"
+        android:textOn="On" />
+
+
+    <Button
+        android:id="@+id/showPaired_id"
+        android:layout_width="92dp"
+        android:layout_height="55dp"
+        android:background="@drawable/custom_button"
+        android:text="Paired Devices"
+        android:fontFamily="@font/andika_new_basic"
+        />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:fontFamily="@font/andika_new_basic"
+        android:text="Login"
+        android:textSize="40dp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/andika_new_basic">
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:id="@+id/username">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:id="@+id/password"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:hint="Password"
+                android:password="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:text="GO"
+        android:layout_marginLeft="140dp"
+        android:id="@+id/login_id"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/andika_new_basic"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/andika_new_basic"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Here?"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:id="@+id/register_id"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
